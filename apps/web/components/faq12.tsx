@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, Fragment, ReactNode } from 'react';
 
 interface FAQ12Props {
