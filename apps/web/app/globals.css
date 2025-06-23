@@ -24,6 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
   --dl-layout-size-large: 144px;
   --dl-layout-size-small: 48px;
@@ -992,77 +993,3 @@ body {
     font-size: 28px;
   }
 }
-
-/* --- BEGIN: TeleportHQ index.css home-* styles integration --- */
-
-.home-container10 {
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  padding-left: var(--dl-layout-space-twounits);
-  padding-right: var(--dl-layout-space-twounits);
-  flex-direction: column;
-}
-
-.home-fragment10 { display: contents; }
-.home-text100 { display: inline-block; font-style: normal; }
-.home-fragment11 { display: contents; }
-.home-text101 { display: inline-block; }
-.home-fragment12 { display: contents; }
-.home-text102 { display: inline-block; }
-.home-fragment13 { display: contents; }
-.home-text103 { display: inline-block; }
-.home-fragment14 { display: contents; }
-.home-text104 { display: inline-block; font-style: normal; }
-.home-fragment15 { display: contents; }
-.home-text105 { display: inline-block; font-style: normal; }
-.home-fragment16 { display: contents; }
-.home-text106 { display: inline-block; font-style: normal; }
-.home-fragment17 { display: contents; }
-.home-text107 { display: inline-block; font-style: normal; }
-.home-fragment18 { display: contents; }
-.home-text108 { display: inline-block; }
-.home-fragment19 { display: contents; }
-.home-text109 { display: inline-block; }
-.home-fragment20 { display: contents; }
-.home-text110 { display: inline-block; }
-.home-fragment21 { display: contents; }
-.home-text111 { display: inline-block; }
-.home-fragment22 { display: contents; }
-.home-text112 { display: inline-block; }
-.home-fragment23 { display: contents; }
-.home-text113 { display: inline-block; }
-.home-fragment24 { display: contents; }
-.home-text114 { display: inline-block; }
-.home-fragment25 { display: contents; }
-.home-text115 { display: inline-block; }
-.home-fragment26 { display: contents; }
-.home-text116 { display: inline-block; }
-.home-fragment27 { display: contents; }
-.home-text117 { display: inline-block; }
-.home-fragment28 { display: contents; }
-.home-text118 { display: inline-block; }
-.home-fragment29 { display: contents; }
-.home-text119 { display: inline-block; }
-.home-fragment30 { display: contents; }
-.home-text120 { display: inline-block; }
-.home-fragment31 { display: contents; }
-.home-text121 { display: inline-block; }
-.home-fragment32 { display: contents; }
-.home-text122 { display: inline-block; font-style: normal; }
-.home-fragment33 { display: contents; }
-.home-text123 { display: inline-block; font-size: 15px; font-style: normal; font-weight: 300; }
-.home-fragment34 { display: contents; }
-.home-text124 { display: inline-block; }
-.home-fragment35 { display: contents; }
-.home-text125 { display: inline-block; }
-.home-fragment36 { display: contents; }
-.home-text126 { display: inline-block; }
-.home-fragment37 { display: contents; }
-.home-text127 { display: inline-block; font-style: normal; }
-.home-fragment38 { display: contents; }
-.home-text128 { display: inline-block; }
-/* ... (continue appending all home-* styles as needed) ... */
-
-/* --- END: TeleportHQ index.css home-* styles integration --- */
