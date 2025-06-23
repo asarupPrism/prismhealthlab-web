@@ -1,0 +1,35 @@
+.home-container10 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding-left: var(--dl-layout-space-twounits);
+  padding-right: var(--dl-layout-space-twounits);
+  flex-direction: column;
+}
+
+.home-hero-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.home-text135 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #002e53;
+}
+
+.home-hero-subtext {
+  margin-top: 16px;
+  text-align: center;
+  color: #444;
+}
+
+.home-text139 {
+  font-size: 1.25rem;
+  color: #444;
+}
+
+/* Add more home-* styles as needed from index.css */
+
+/* ... (Add all other home-* and related styles from index.css here) ... */ 
