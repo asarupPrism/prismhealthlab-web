@@ -1,3 +1,4 @@
+'use client';
 import React, { Fragment, ReactNode } from 'react';
 
 import { useTranslations } from 'next-intl';
@@ -5,6 +6,8 @@ import { useTranslations } from 'next-intl';
 interface Navbar4Props {
   logoAlt?: string;
   logoSrc?: string;
+  textUrl?: string;
+  textUrl1?: string;
   text?: ReactNode;
   text1?: ReactNode;
   text2?: ReactNode;
