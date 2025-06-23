@@ -1,83 +1,282 @@
 import Image from 'next/image';
+import { Fragment } from 'react';
+import Navbar4 from '../components/navbar4';
+import FAQ12 from '../components/faq12';
+import Footer3 from '../components/footer3';
+
+export const metadata = {
+  title: 'PRISM Home Page',
+  openGraph: {
+    title: 'PRISM Home Page',
+  },
+};
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{' '}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="/window.svg" alt="Window icon" width={16} height={16} />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="home-container10">
+      <Navbar4
+        text={
+          <Fragment>
+            <span className="home-text100">Our Products</span>
+          </Fragment>
+        }
+        text1={
+          <Fragment>
+            <span className="home-text101">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text2={
+          <Fragment>
+            <span className="home-text102">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text3={
+          <Fragment>
+            <span className="home-text103">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+        text4={
+          <Fragment>
+            <span className="home-text104">Blog</span>
+          </Fragment>
+        }
+        text5={
+          <Fragment>
+            <span className="home-text105">Shop</span>
+          </Fragment>
+        }
+        text6={
+          <Fragment>
+            <span className="home-text106">Our Company</span>
+          </Fragment>
+        }
+        text7={
+          <Fragment>
+            <span className="home-text107">Our Services</span>
+          </Fragment>
+        }
+        text9={
+          <Fragment>
+            <span className="home-text108">Shop</span>
+          </Fragment>
+        }
+        text10={
+          <Fragment>
+            <span className="home-text109">Blog</span>
+          </Fragment>
+        }
+        text11={
+          <Fragment>
+            <span className="home-text110">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text12={
+          <Fragment>
+            <span className="home-text111">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text13={
+          <Fragment>
+            <span className="home-text112">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text14={
+          <Fragment>
+            <span className="home-text113">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text21={
+          <Fragment>
+            <span className="home-text114">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text22={
+          <Fragment>
+            <span className="home-text115">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text23={
+          <Fragment>
+            <span className="home-text116">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text24={
+          <Fragment>
+            <span className="home-text117">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text32={
+          <Fragment>
+            <span className="home-text118">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+        text33={
+          <Fragment>
+            <span className="home-text119">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+        text34={
+          <Fragment>
+            <span className="home-text120">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+        text35={
+          <Fragment>
+            <span className="home-text121">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+        text71={
+          <Fragment>
+            <span className="home-text122">Our Products</span>
+          </Fragment>
+        }
+        action1={
+          <Fragment>
+            <span className="home-text123">$359.97</span>
+          </Fragment>
+        }
+        text141={
+          <Fragment>
+            <span className="home-text124">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text241={
+          <Fragment>
+            <span className="home-text125">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text351={
+          <Fragment>
+            <span className="home-text126">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+        text712={
+          <Fragment>
+            <span className="home-text127">Our Company</span>
+          </Fragment>
+        }
+        text713={
+          <Fragment>
+            <span className="home-text128">Our Services</span>
+          </Fragment>
+        }
+        text1412={
+          <Fragment>
+            <span className="home-text129">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text1413={
+          <Fragment>
+            <span className="home-text130">At-Home Oral Health Test Kit</span>
+          </Fragment>
+        }
+        text2412={
+          <Fragment>
+            <span className="home-text131">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text2413={
+          <Fragment>
+            <span className="home-text132">At-Home Respiratory Pathogen PCR Kit</span>
+          </Fragment>
+        }
+        text3512={
+          <Fragment>
+            <span className="home-text133">Coconut Oil Pulling Complex</span>
+          </Fragment>
+        }
+      />
+      <div className="home-hero-title">
+        <h1 className="home-text135">
+          <span>At-Home Lab Testing</span>
+          <br />
+          <span>Made Easy.​</span>
+        </h1>
+      </div>
+      <div className="home-hero-subtext">
+        <p className="home-text139">
+          <span>Personalized at-home testing made easy by a world class CLIA Certified&nbsp;</span>
+          <span>Laboratory built by doctors.​</span>
+        </p>
+      </div>
+      <div className="home-cta1">
+        <button type="button" className="home-button1 button">
+          Explore
+        </button>
+      </div>
+      {/* ... (rest of main content, images, testimonials, etc. can be added here) ... */}
+      <FAQ12
+        content1={
+          <Fragment>
+            <span className="home-text264">
+              <span>
+                Have more questions? Our FAQ should answer of them! If not, don&apos;t hesitate to
+                <span dangerouslySetInnerHTML={{ __html: ' ' }} />
+              </span>
+              <span className="home-text266">contact us</span>
+              <span> - we&apos;d love to hear from you!</span>
+            </span>
+          </Fragment>
+        }
+        heading1={
+          <Fragment>
+            <span className="home-text268">
+              <span>Frequently asked</span>
+              <br />
+              <span>questions​</span>
+            </span>
+          </Fragment>
+        }
+        faq1Question={
+          <Fragment>
+            <span className="home-text272">Frequently Asked Questions</span>
+          </Fragment>
+        }
+        faq2Question={
+          <Fragment>
+            <span className="home-text273">Frequently Asked Questions</span>
+          </Fragment>
+        }
+        faq3Question={
+          <Fragment>
+            <span className="home-text274">Frequently Asked Questions</span>
+          </Fragment>
+        }
+        faq4Question={
+          <Fragment>
+            <span className="home-text275">Frequently Asked Questions</span>
+          </Fragment>
+        }
+      />
+      {/* ... (other sections, e.g. testimonials, can be added here) ... */}
+      <Footer3
+        link1={
+          <Fragment>
+            <span className="home-text288">About Us</span>
+          </Fragment>
+        }
+        link3={
+          <Fragment>
+            <span className="home-text289">Careers</span>
+          </Fragment>
+        }
+        link4={
+          <Fragment>
+            <span className="home-text290">Privacy Policy</span>
+          </Fragment>
+        }
+        link5={
+          <Fragment>
+            <span className="home-text291">Terms And Conditions</span>
+          </Fragment>
+        }
+        link51={
+          <Fragment>
+            <span className="home-text292">CDC COVID-19 Information</span>
+          </Fragment>
+        }
+        rootClassName="footer3root-class-name"
+      />
     </div>
   );
 }
