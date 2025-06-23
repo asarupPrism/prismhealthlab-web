@@ -1,5 +1,4 @@
 import { createContext, useMemo, useContext, useState, useEffect, ReactNode } from 'react';
-import { useLocale } from 'next-intl';
 
 interface Locale {
   name: string;
@@ -21,20 +20,22 @@ interface GlobalProviderProps {
 }
 
 export const GlobalProvider = ({ initialLocales, children }: GlobalProviderProps) => {
-  const localeValue = useLocale();
   const [locales, setLocales] = useState<Locale[]>(
     initialLocales ?? [{ name: 'English', short: 'en' }],
   );
   const [locale, setLocale] = useState<Locale>({ name: 'English', short: 'en' });
 
+  // Default to English locale
   useEffect(() => {
-    if (!locales) {
+    if (!locales || locales.length === 0) {
       return;
     }
 
-    const currentLangValue = locales.find((el) => el.short === localeValue);
-    if (currentLangValue) setLocale(currentLangValue);
-  }, [locales, localeValue]);
+    // Set default locale to first available locale
+    if (!locale || !locales.find((el) => el.short === locale.short)) {
+      setLocale(locales[0]);
+    }
+  }, [locales, locale]);
 
   const value = useMemo(() => {
     return {
