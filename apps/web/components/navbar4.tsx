@@ -1,8 +1,6 @@
 'use client';
 import React, { Fragment, ReactNode } from 'react';
 
-import { useTranslations } from 'next-intl';
-
 interface Navbar4Props {
   logoAlt?: string;
   logoSrc?: string;

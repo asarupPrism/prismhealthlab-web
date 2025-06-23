@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Fragment } from 'react';
 import Navbar4 from '../components/navbar4';
 import FAQ12 from '../components/faq12';
