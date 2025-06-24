@@ -1,351 +1,122 @@
 'use client';
-import React, { Fragment, ReactNode } from 'react';
+import React from 'react';
+import Link from 'next/link';
 
 interface Footer3Props {
-  logoAlt?: string;
-  logoSrc?: string;
-  link1?: ReactNode;
-  link3?: ReactNode;
-  link4?: ReactNode;
-  link5?: ReactNode;
-  link51?: ReactNode;
-  rootClassName?: string;
+  className?: string;
 }
 
-const Footer3: React.FC<Footer3Props> = (props) => {
+const Footer3: React.FC<Footer3Props> = ({ className = '' }) => {
   return (
-    <>
-      <footer className={`footer3-footer4 thq-section-padding ${props.rootClassName} `}>
-        <div className="footer3-max-width thq-section-max-width">
-          <div className="footer3-content">
-            <div className="footer3-logo">
-              <img alt={props.logoAlt} src={props.logoSrc} className="footer3-image1" />
-            </div>
-            <div className="footer3-links">
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="footer3-link1"
-              >
-                {props.link1 ?? (
-                  <Fragment>
-                    <span className="footer3-text3">About Us</span>
-                  </Fragment>
-                )}
-              </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="footer3-link3"
-              >
-                {props.link3 ?? (
-                  <Fragment>
-                    <span className="footer3-text5">Careers</span>
-                  </Fragment>
-                )}
-              </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="footer3-link4"
-              >
-                {props.link4 ?? (
-                  <Fragment>
-                    <span className="footer3-text2">Privacy Policy</span>
-                  </Fragment>
-                )}
-              </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="footer3-link5"
-              >
-                {props.link5 ?? (
-                  <Fragment>
-                    <span className="footer3-text1">Terms And Conditions</span>
-                  </Fragment>
-                )}
-              </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="footer3-link6"
-              >
-                {props.link51 ?? (
-                  <Fragment>
-                    <span className="footer3-text4">CDC COVID-19 Information</span>
-                  </Fragment>
-                )}
-              </a>
-            </div>
-            <div className="footer3-social-links">
-              <svg viewBox="0 0 877.7142857142857 1024" className="footer3-icon1 thq-icon-small">
-                <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
-              </svg>
-              <svg viewBox="0 0 877.7142857142857 1024" className="footer3-icon3 thq-icon-small">
-                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-              </svg>
-              <svg viewBox="0 0 877.7142857142857 1024" className="footer3-icon5 thq-icon-small">
-                <path d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"></path>
-              </svg>
+    <footer className={`bg-[#002e53] text-white ${className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo and Description */}
+          <div className="md:col-span-2">
+            <img
+              src="/1-03-1_white-300x65-1500h.png"
+              alt="Prism Health Lab"
+              className="h-10 w-auto mb-4"
+            />
+            <p className="text-gray-300 mb-4">
+              Personalized at-home testing made easy by a world class CLIA Certified Laboratory
+              built by doctors.
+            </p>
+            <div className="flex space-x-4">
+              <img src="/clia-200h.png" alt="CLIA Certified" className="h-8" />
+              <img src="/hippa-200h.png" alt="HIPAA Compliant" className="h-8" />
             </div>
           </div>
-          <div className="footer3-container">
-            <span className="footer3-content31">Contact Us:</span>
-            <span className="footer3-content32">Email: info@prism.com</span>
-            <span className="footer3-content33">Phone: (800) 325-1812</span>
+
+          {/* Company Links */}
+          <div>
+            <h3 className="font-semibold mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  Terms And Conditions
+                </Link>
+              </li>
+            </ul>
           </div>
-          <div className="footer3-credits">
-            <div className="footer3-divider thq-divider-horizontal"></div>
-            <div className="footer3-row">
-              <div className="footer3-footer-links">
-                <span className="footer3-content34 nav thq-body-small">
-                  © 2025 Copyright Prism Health Lab
-                </span>
-              </div>
-            </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="font-semibold mb-4">Resources</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  CDC COVID-19 Information
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  Support
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-      <style jsx>
-        {`
-          .footer3-footer4 {
-            gap: 80px;
-            width: 100%;
-            height: auto;
-            display: flex;
-            padding: var(--dl-layout-space-fiveunits);
-            overflow: hidden;
-            position: relative;
-            align-items: center;
-            flex-shrink: 0;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .footer3-max-width {
-            gap: var(--dl-layout-space-twounits);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-          }
-          .footer3-content {
-            gap: 32px;
-            display: flex;
-            align-self: stretch;
-            align-items: center;
-            flex-shrink: 0;
-            justify-content: center;
-          }
-          .footer3-logo {
-            gap: 24px;
-            width: auto;
-            display: flex;
-            overflow: hidden;
-            flex-grow: 1;
-            align-items: flex-start;
-            flex-shrink: 0;
-            flex-direction: column;
-          }
-          .footer3-image1 {
-            height: 2rem;
-          }
-          .footer3-links {
-            gap: var(--dl-layout-space-twounits);
-            display: flex;
-            align-self: flex-start;
-            align-items: flex-start;
-          }
-          .footer3-link1 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 14px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 600;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-link3 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 14px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 600;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-link4 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 14px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 600;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-link5 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 14px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 600;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-link6 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 14px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 600;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-social-links {
-            gap: var(--dl-layout-space-unit);
-            display: flex;
-            flex-grow: 1;
-            align-self: flex-start;
-            align-items: center;
-            justify-content: flex-end;
-          }
-          .footer3-icon1 {
-            fill: var(--dl-color-theme-secondary1);
-          }
-          .footer3-icon3 {
-            fill: var(--dl-color-theme-secondary1);
-          }
-          .footer3-icon5 {
-            fill: var(--dl-color-theme-secondary1);
-          }
-          .footer3-container {
-            gap: var(--dl-layout-space-threeunits);
-            flex: 0 0 auto;
-            display: flex;
-            align-self: flex-start;
-            align-items: flex-start;
-            flex-direction: row;
-          }
-          .footer3-content31 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 18px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 600;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-content32 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 18px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 300;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-content33 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            font-size: 18px;
-            font-style: normal;
-            font-family: 'Poppins';
-            font-weight: 300;
-            text-transform: none;
-            text-decoration: none;
-          }
-          .footer3-credits {
-            gap: var(--dl-layout-space-twounits);
-            display: flex;
-            align-self: stretch;
-            align-items: center;
-            flex-direction: column;
-          }
-          .footer3-divider {
-            background-color: var(--dl-color-theme-secondary1);
-          }
-          .footer3-row {
-            gap: 24px;
-            display: flex;
-            align-items: flex-start;
-          }
-          .footer3-footer-links {
-            gap: var(--dl-layout-space-oneandhalfunits);
-            display: flex;
-            align-items: flex-start;
-          }
-          .footer3-content34 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-          }
-          .footer3-text1 {
-            display: inline-block;
-          }
-          .footer3-text2 {
-            display: inline-block;
-          }
-          .footer3-text3 {
-            display: inline-block;
-          }
-          .footer3-text4 {
-            display: inline-block;
-          }
-          .footer3-text5 {
-            display: inline-block;
-          }
 
-          @media (max-width: 991px) {
-            .footer3-logo {
-              width: auto;
-            }
-          }
-          @media (max-width: 767px) {
-            .footer3-content {
-              flex-direction: column;
-            }
-            .footer3-row {
-              flex-direction: column;
-            }
-            .footer3-footer-links {
-              align-items: center;
-              flex-direction: column;
-              justify-content: center;
-            }
-          }
-          @media (max-width: 479px) {
-            .footer3-max-width {
-              gap: var(--dl-layout-space-oneandhalfunits);
-            }
-            .footer3-content {
-              width: 100%;
-            }
-            .footer3-links {
-              width: 100%;
-              align-items: center;
-              flex-direction: column;
-              justify-content: center;
-            }
-            .footer3-container {
-              flex-direction: column;
-            }
-            .footer3root-class-name {
-              padding: var(--dl-layout-space-unit);
-            }
-          }
-        `}
-      </style>
-    </>
+        {/* Bottom Section */}
+        <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-300 text-sm">© 2024 Prism Health Lab. All rights reserved.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+              <span className="sr-only">Facebook</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M20 10C20 4.477 15.523 0 10 0S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
+            <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+              <span className="sr-only">Twitter</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </Link>
+            <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+              <span className="sr-only">LinkedIn</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
