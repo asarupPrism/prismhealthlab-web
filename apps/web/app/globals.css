@@ -94,6 +94,19 @@ img {
   transform: rotate(90deg);
 }
 
+/* TeleportHQ Fragment Styles */
+.navbar4-fragment10, .navbar4-fragment11, .navbar4-fragment12, .navbar4-fragment13,
+.navbar4-fragment14, .navbar4-fragment15, .navbar4-fragment16, .navbar4-fragment17,
+.navbar4-fragment18, .navbar4-fragment19, .navbar4-fragment20, .navbar4-fragment21,
+.navbar4-fragment22, .navbar4-fragment23, .navbar4-fragment24, .navbar4-fragment25,
+.navbar4-fragment26, .navbar4-fragment27, .navbar4-fragment28, .navbar4-fragment29,
+.navbar4-fragment30, .navbar4-fragment31, .navbar4-fragment32, .navbar4-fragment33,
+.navbar4-fragment34, .navbar4-fragment35, .navbar4-fragment36, .navbar4-fragment37,
+.navbar4-fragment38, .navbar4-fragment39, .navbar4-fragment40, .navbar4-fragment41,
+.navbar4-fragment42, .navbar4-fragment43, .navbar4-fragment44 {
+  display: contents;
+}
+
 /* TeleportHQ Accordion Styles */
 [data-thq="accordion"] [data-thq="accordion-content"] {
   max-height: 0;
