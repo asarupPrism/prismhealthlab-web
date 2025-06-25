@@ -240,6 +240,128 @@ export default function GIRoadmap() {
                 </div>
             </section>
 
+            <section id="phased-strategy">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Phased Launch Strategy: From $0 to Full Capability</h2>
+                    <p class="text-lg text-gray-500 mt-2">When can we launch? How do we scale capabilities and what does it cost?</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <!-- Phase 0 -->
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#C1E7F4]">
+                        <div class="text-center mb-4">
+                            <h3 class="font-bold text-xl text-[#004AAD] mb-2">Phase 0</h3>
+                            <div class="text-3xl font-extrabold text-[#004AAD]">$0</div>
+                            <p class="text-sm text-gray-600 mt-1">Required CapEx</p>
+                        </div>
+                        <h4 class="font-semibold text-[#004AAD] mb-3">Leverage Existing Molecular Assets</h4>
+                        <p class="text-sm text-gray-700 mb-4">Utilizes the laboratory's existing QuantStudio 7 Pro qPCR system. Immediately launches core molecular diagnostics.</p>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Microbiome Composition:</h5>
+                                <p class="text-xs text-gray-600">Commensal qPCR Panel for absolute quantification of key bacteria</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Pathogens:</h5>
+                                <p class="text-xs text-gray-600">GI Pathogen Panel via multiplex qPCR</p>
+                                <p class="text-xs text-gray-600">H. pylori + Virulence Factors detection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#78C0E0]">
+                        <div class="text-center mb-4">
+                            <h3 class="font-bold text-xl text-[#004AAD] mb-2">Phase 1</h3>
+                            <div class="text-3xl font-extrabold text-[#004AAD]">$70K</div>
+                            <p class="text-sm text-gray-600 mt-1">Required CapEx</p>
+                        </div>
+                        <h4 class="font-semibold text-[#004AAD] mb-3">Foundational Immunoassays & Basic Microscopy</h4>
+                        <p class="text-sm text-gray-700 mb-4">Investment in Dynex DS2 ELISA/CLIA Automation system for high-volume protein biomarkers.</p>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Digestion/Absorption:</h5>
+                                <p class="text-xs text-gray-600">Pancreatic Elastase-1 via ELISA</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Inflammation/Immunology:</h5>
+                                <p class="text-xs text-gray-600">Calprotectin, sIgA, Fecal Occult Blood</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Microscopy:</h5>
+                                <p class="text-xs text-gray-600">Ova & Parasites (O&P)</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Add-On Module:</h5>
+                                <p class="text-xs text-gray-600">EPX and Zonulin (Inflammation Plus)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#0094D1]">
+                        <div class="text-center mb-4">
+                            <h3 class="font-bold text-xl text-[#004AAD] mb-2">Phase 2</h3>
+                            <div class="text-3xl font-extrabold text-[#004AAD]">$40K</div>
+                            <p class="text-sm text-gray-600 mt-1">Required CapEx</p>
+                        </div>
+                        <h4 class="font-semibold text-[#004AAD] mb-3">Metabolite & Chemical Analysis</h4>
+                        <p class="text-sm text-gray-700 mb-4">Investment in Agilent 8890 GC-FID system for microbiome metabolites and fecal fat analysis.</p>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Digestion/Absorption:</h5>
+                                <p class="text-xs text-gray-600">Steatocrit (Fecal Fat) analysis</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Microbiome Metabolites:</h5>
+                                <p class="text-xs text-gray-600">Short-Chain Fatty Acids (SCFAs)</p>
+                                <p class="text-xs text-gray-600">Beta-Glucuronidase analysis</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#004AAD]">
+                        <div class="text-center mb-4">
+                            <h3 class="font-bold text-xl text-[#004AAD] mb-2">Phase 3</h3>
+                            <div class="text-3xl font-extrabold text-[#004AAD]">$180K</div>
+                            <p class="text-sm text-gray-600 mt-1">Required CapEx</p>
+                        </div>
+                        <h4 class="font-semibold text-[#004AAD] mb-3">Advanced Microbiology & Mycology</h4>
+                        <p class="text-sm text-gray-700 mb-4">Investment in MALDI-TOF MS system (Bruker Biotyper Sirius) for rapid microbial identification.</p>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Yeast/Mycology Add-On:</h5>
+                                <p class="text-xs text-gray-600">Comprehensive yeast and mold culture</p>
+                                <p class="text-xs text-gray-600">MALDI-TOF MS identification</p>
+                                <p class="text-xs text-gray-600">Sensitivity testing for antifungals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Summary Row -->
+                <div class="mt-8 bg-gradient-to-r from-[#004AAD] to-[#0094D1] rounded-lg p-6 text-white">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-2xl font-bold">$290K</div>
+                            <p class="text-sm opacity-90">Total CapEx Investment</p>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">4 Phases</div>
+                            <p class="text-sm opacity-90">Phased Deployment Strategy</p>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">Full Panel</div>
+                            <p class="text-sm opacity-90">Complete Capability Unlocked</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Bottom Read the Full Report Button -->
             <section class="text-center mt-16">
                 <div class="bg-white rounded-lg shadow-md p-8">
