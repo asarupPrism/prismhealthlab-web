@@ -142,7 +142,7 @@ export default function GIRoadmap() {
           font: {
             family: "'Inter', sans-serif",
             size: 12,
-            weight: '500',
+            weight: 500,
           },
         },
       },
@@ -207,7 +207,7 @@ export default function GIRoadmap() {
           font: {
             family: "'Inter', sans-serif",
             size: 11,
-            weight: '500',
+            weight: 500,
           },
         },
       },
@@ -236,7 +236,7 @@ export default function GIRoadmap() {
           font: {
             family: "'Inter', sans-serif",
             size: 10,
-            weight: '500',
+            weight: 500,
           },
         },
       },
