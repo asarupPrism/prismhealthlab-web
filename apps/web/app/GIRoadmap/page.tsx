@@ -240,11 +240,25 @@ export default function GIRoadmap() {
                 </div>
             </section>
 
+            <!-- Bottom Read the Full Report Button -->
+            <section class="text-center mt-16">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-2xl font-bold text-[#004AAD] mb-4">Ready for the Complete Analysis?</h3>
+                    <p class="text-gray-600 mb-6">Dive deep into the comprehensive market analysis, technical specifications, and financial projections.</p>
+                    <a href="/FullReport" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-[#004AAD] hover:bg-[#003d8a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#004AAD] transition-colors duration-200 shadow-lg hover:shadow-xl">
+                        Read the Full Report
+                        <svg class="ml-3 -mr-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
         </main>
 
         <footer class="text-center mt-20 py-8 border-t border-gray-300">
-            <p class="text-gray-600">Disrupting Diagnostics. Built on Transparency.</p>
-            <p class="text-sm text-gray-400 mt-2">This infographic visualizes the strategic roadmap for a new comprehensive stool panel. All data derived from the provided planning documentation.</p>
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">Prism Health Lab</h1>
+            <h2 class="text-lg text-gray-600 mb-2">This infographic visualizes the strategic roadmap for a new comprehensive stool panel. All data derived from the full report.</h2>
         </footer>
 
     </div>
