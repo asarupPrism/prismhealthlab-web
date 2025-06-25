@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -196,7 +195,7 @@ export default function GIRoadmap() {
       x: {
         stacked: true,
         ticks: {
-          callback: (value: any) => '$' + value,
+          callback: (value: number | string) => '$' + value,
           color: '#4b5563',
           font: { family: "'Inter', sans-serif" },
         },
