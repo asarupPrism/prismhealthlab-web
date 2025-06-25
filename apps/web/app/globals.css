@@ -19,10 +19,105 @@
   }
 }
 
+html {
+  font-family: var(--font-roboto), "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.15;
+  color: var(--dl-color-theme-neutral-dark);
+  background: var(--dl-color-theme-neutral-light);
+  fill: var(--dl-color-theme-neutral-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  color: inherit;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+input {
+  padding: 2px 4px;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+/* TeleportHQ Dropdown Styles */
+[data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+  display: flex;
+}
+
+[data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+  transform: rotate(90deg);
+}
+
+/* TeleportHQ Accordion Styles */
+[data-thq="accordion"] [data-thq="accordion-content"] {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding: 0;
+}
+
+[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {
+  max-height: 1000vh;
+}
+
+details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {
+  transform: rotate(180deg);
+}
+
+details {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 :root {
