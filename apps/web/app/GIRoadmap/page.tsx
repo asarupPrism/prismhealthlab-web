@@ -121,7 +121,7 @@ export default function GIRoadmap() {
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <h3 class="font-bold text-xl text-center text-[#004AAD]">Our Core Panel Composition</h3>
-                        <div class="chart-container h-80">
+                        <div class="chart-container h-80 md:h-96">
                             <canvas id="panelCompositionChart"></canvas>
                         </div>
                         <p class="text-center mt-4 text-gray-600">Our panel is rationally designed, focusing on functional domains with the highest diagnostic value, eliminating redundant and low-utility markers that inflate costs.</p>
@@ -154,7 +154,7 @@ export default function GIRoadmap() {
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <h3 class="font-bold text-xl text-center text-[#004AAD]">Cost of Goods Breakdown (Target: $116)</h3>
-                         <div class="chart-container h-80">
+                         <div class="chart-container h-80 md:h-96">
                             <canvas id="cogsChart"></canvas>
                         </div>
                         <p class="text-center mt-4 text-gray-600">Smart reagent sourcing, automation, and logistics are key to keeping our COGS low.</p>
@@ -257,8 +257,8 @@ export default function GIRoadmap() {
         </main>
 
         <footer class="text-center mt-20 py-8 border-t border-gray-300">
-            <h1 class="text-2xl font-bold text-gray-800 mb-2">Prism Health Lab</h1>
-            <h2 class="text-lg text-gray-600 mb-2">This infographic visualizes the strategic roadmap for a new comprehensive stool panel. All data derived from the full report.</h2>
+            <h1 class="text-lg font-semibold text-gray-500 mb-1">Prism Health Lab</h1>
+            <h2 class="text-sm text-gray-400">This infographic visualizes the strategic roadmap for a new comprehensive stool panel. All data derived from the full report.</h2>
         </footer>
 
     </div>
@@ -383,7 +383,19 @@ export default function GIRoadmap() {
             options: {
                 ...sharedChartOptions,
                 cutout: '60%',
-                plugins: { ...sharedChartOptions.plugins, legend: { position: 'right' } },
+                plugins: { 
+                    ...sharedChartOptions.plugins, 
+                    legend: { 
+                        position: window.innerWidth < 768 ? 'bottom' : 'right',
+                        labels: {
+                            boxWidth: 12,
+                            padding: 10,
+                            font: {
+                                size: window.innerWidth < 768 ? 10 : 12
+                            }
+                        }
+                    } 
+                },
                 scales: { y: { display: false }, x: { display: false } }
             }
         });
@@ -408,7 +420,19 @@ export default function GIRoadmap() {
             },
             options: {
                 ...sharedChartOptions,
-                plugins: { ...sharedChartOptions.plugins, legend: { position: 'right' } },
+                plugins: { 
+                    ...sharedChartOptions.plugins, 
+                    legend: { 
+                        position: window.innerWidth < 768 ? 'bottom' : 'right',
+                        labels: {
+                            boxWidth: 12,
+                            padding: 10,
+                            font: {
+                                size: window.innerWidth < 768 ? 10 : 12
+                            }
+                        }
+                    } 
+                },
                 scales: { y: { display: false }, x: { display: false } }
             }
         });
@@ -444,6 +468,31 @@ export default function GIRoadmap() {
                 }
             }
         });
+
+        // Handle responsive legend positioning
+        function updateChartResponsiveness() {
+            const panelChart = Chart.getChart('panelCompositionChart');
+            const cogsChart = Chart.getChart('cogsChart');
+            
+            const isMobile = window.innerWidth < 768;
+            const legendPosition = isMobile ? 'bottom' : 'right';
+            const fontSize = isMobile ? 10 : 12;
+            
+            if (panelChart) {
+                panelChart.options.plugins.legend.position = legendPosition;
+                panelChart.options.plugins.legend.labels.font.size = fontSize;
+                panelChart.update();
+            }
+            
+            if (cogsChart) {
+                cogsChart.options.plugins.legend.position = legendPosition;
+                cogsChart.options.plugins.legend.labels.font.size = fontSize;
+                cogsChart.update();
+            }
+        }
+
+        // Listen for window resize events
+        window.addEventListener('resize', updateChartResponsiveness);
     </script>
 </body>
 </html>
