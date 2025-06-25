@@ -19,7 +19,7 @@ export default function Home() {
         <h1 className="home-text135">
           <span>At-Home Lab Testing</span>
           <br />
-          <span>Made Easy.​</span>
+          <span>Made Easy.</span>
         </h1>
       </div>
 
@@ -27,7 +27,7 @@ export default function Home() {
       <div className="home-hero-subtext">
         <p className="home-text139">
           <span>Personalized at-home testing made easy by a world class CLIA Certified&nbsp;</span>
-          <span>Laboratory built by doctors.​</span>
+          <span>Laboratory built by doctors.</span>
         </p>
       </div>
 
@@ -40,18 +40,18 @@ export default function Home() {
 
       {/* Subtitle - Over 20+ Tests */}
       <div className="home-subtitle1">
-        <h2 className="home-text142">Over 20+ Tests Available​</h2>
+        <h2 className="home-text142">Over 20+ Tests Available</h2>
       </div>
 
       {/* Test Categories */}
       <div className="home-container11">
         <div className="home-container12">
           <img alt="image" src="/untitled-1-03.svg" className="home-image10" />
-          <span className="home-text143 ContPop18">General Health Tests​</span>
+          <span className="home-text143 ContPop18">General Health Tests</span>
         </div>
         <div className="home-container13">
           <img alt="image" src="/untitled-1-02.svg" className="home-image11" />
-          <span className="home-text144 ContPop18">Oral HealthTests​</span>
+          <span className="home-text144 ContPop18">Oral Health Tests</span>
         </div>
         <div className="home-container14">
           <img alt="image" src="/untitled-1-01.svg" className="home-image12" />
@@ -63,7 +63,7 @@ export default function Home() {
       <div className="home-title2">
         <h1 className="home-text146">
           <span>Personalized insights that guide</span>
-          <span>you all the way.​</span>
+          <span>you all the way.</span>
         </h1>
       </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="home-container16">
           <div className="home-container17">
             <span className="home-text155">32</span>
-            <span className="home-text156">miu/l​</span>
+            <span className="home-text156">miu/l</span>
           </div>
           <div className="home-container18">
             <svg width="48" height="48" viewBox="0 0 48 48" className="home-icon10">
@@ -105,7 +105,7 @@ export default function Home() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <span className="home-text157">30%​</span>
+            <span className="home-text157">30%</span>
           </div>
           <div className="home-container19">
             <span className="home-text158 Content">
@@ -117,7 +117,7 @@ export default function Home() {
         </div>
         <div className="home-container20">
           <div className="home-container21">
-            <span className="home-text162">Normal Range​</span>
+            <span className="home-text162">Normal Range</span>
             <img
               alt="image"
               src="/screenshot-2025-06-10-at-7.45.01-pm-200h.png"
@@ -132,7 +132,7 @@ export default function Home() {
             </p>
             <p className="home-text167">
               <span className="Content">
-                You have improved significnatly since your last test at
+                You have improved significantly since your last test at
               </span>
               <span className="home-text169">15.22</span>
               <span className="Content">for</span>
@@ -196,7 +196,7 @@ export default function Home() {
 
       {/* CLIA Certification Section */}
       <div className="home-clia">
-        <h1 className="home-text196">CLIA Certified Precision​</h1>
+        <h1 className="home-text196">CLIA Certified Precision</h1>
         <p className="home-text197">
           <span className="home-text198">We take testing seriously, seriously. Our</span>
           <span className="home-text199">CLIA Certification</span>
@@ -215,8 +215,8 @@ export default function Home() {
 
       {/* Subscribe 1 */}
       <div className="home-subscribe1">
-        <h2 className="home-text204">Limited Time Offer​</h2>
-        <h2 className="home-text205">Subscribe for 30% off your first at-home health test.​</h2>
+        <h2 className="home-text204">Limited Time Offer</h2>
+        <h2 className="home-text205">Subscribe for 30% off your first at-home health test.</h2>
         <p className="home-text206 Content">
           Join our Prism health & wellness newsletter to receive updates, knowledge, and exclusive
           discounts.
@@ -349,11 +349,11 @@ export default function Home() {
 
       {/* How Tests Work */}
       <div className="home-how-works">
-        <h1 className="home-text219">How our tests work​</h1>
+        <h1 className="home-text219">How our tests work</h1>
         <div className="home-container25">
           <div className="home-container26">
             <img alt="image" src="/1-2-200h.png" className="home-image17" />
-            <span className="home-text220">Order the test​</span>
+            <span className="home-text220">Order the test</span>
             <span className="home-text221">
               Order your kit online for a one-time test with all of the necessary materials that
               ship directly to you.
@@ -364,7 +364,7 @@ export default function Home() {
             <span className="home-text222">
               <span>Collect your sample</span>
               <br />
-              <span>at-home​</span>
+              <span>at-home</span>
             </span>
             <span className="home-text226">
               Use the oral sponge to collect your saliva sample in the morning before eating or
@@ -373,7 +373,7 @@ export default function Home() {
           </div>
           <div className="home-container28">
             <img alt="image" src="/5-1024x1024-200h.png" className="home-image19" />
-            <span className="home-text227">Receive results​</span>
+            <span className="home-text227">Receive results</span>
             <span className="home-text228">
               Receive your detailed PDF results via email within a few days, including pathogen
               detection and personalized health recommendations.
@@ -386,7 +386,7 @@ export default function Home() {
       <div className="home-title5">
         <h1 className="home-text229">
           <span>The Most Affordable Tests On&nbsp;</span>
-          <span>The Market​</span>
+          <span>The Market</span>
         </h1>
       </div>
 
@@ -426,16 +426,16 @@ export default function Home() {
           </div>
         </div>
         <div className="home-container33">
-          <h2 className="home-text241">Ultra-Fast Turnarounds​</h2>
+          <h2 className="home-text241">Ultra-Fast Turnarounds</h2>
           <p className="home-text242">
             Receive your results within 2 business days. This is the fastest on the market.
           </p>
-          <h2 className="home-text243">Personalized Insights​</h2>
+          <h2 className="home-text243">Personalized Insights</h2>
           <p className="home-text244">
             Our user portal gives you a series of personalized insights and data tracking so
             it&apos;s easy to understand.
           </p>
-          <h2 className="home-text245">At-Home Convenience​</h2>
+          <h2 className="home-text245">At-Home Convenience</h2>
           <p className="home-text246">
             Our user portal gives you a series of personalized insights and data tracking so
             it&apos;s easy to understand.
@@ -445,8 +445,8 @@ export default function Home() {
 
       {/* Subscribe 2 */}
       <div className="home-subscribe2">
-        <h2 className="home-text247">Limited Time Offer​</h2>
-        <h2 className="home-text248">Subscribe for 30% off your first at-home health test.​</h2>
+        <h2 className="home-text247">Limited Time Offer</h2>
+        <h2 className="home-text248">Subscribe for 30% off your first at-home health test.</h2>
         <p className="home-text249 Content">
           Join our Prism health & wellness newsletter to receive updates, knowledge, and exclusive
           discounts.
@@ -461,7 +461,7 @@ export default function Home() {
 
       {/* Experts Section */}
       <div className="home-experts">
-        <h1 className="home-text250">Expertly Crafted by Medical Professionals​</h1>
+        <h1 className="home-text250">Expertly Crafted by Medical Professionals</h1>
         <p className="home-text251">
           <span>
             Our diagnostic tests are meticulously developed by top-tier medical professionals and
@@ -480,17 +480,17 @@ export default function Home() {
       <div className="home-experts-photos">
         <div className="home-container35">
           <img alt="image" src="/18-1024x717-300w.png" className="home-image20" />
-          <h2 className="home-text256">Dr. Mehbub Kapadia, MD​</h2>
+          <h2 className="home-text256">Dr. Mehbub Kapadia, MD</h2>
           <span className="home-text257">Medical Director</span>
         </div>
         <div className="home-container36">
           <img alt="image" src="/19-1024x717-300w.png" className="home-image21" />
-          <h2 className="home-text258">Zul Kapadia​</h2>
+          <h2 className="home-text258">Zul Kapadia</h2>
           <span className="home-text259">President</span>
         </div>
         <div className="home-container37">
           <img alt="image" src="/20-1-300w.png" className="home-image22" />
-          <h2 className="home-text260">Sameer Kapadia, MD​</h2>
+          <h2 className="home-text260">Sameer Kapadia, MD</h2>
           <span className="home-text261">Chief Strategy Director</span>
         </div>
         <div className="home-container38">
@@ -499,7 +499,7 @@ export default function Home() {
             src="/prism_website_product-images_01-2-300w.png"
             className="home-image23"
           />
-          <h2 className="home-text262">Abhi Sarup​</h2>
+          <h2 className="home-text262">Abhi Sarup</h2>
           <span className="home-text263">Lead Scientist</span>
         </div>
       </div>
@@ -508,7 +508,7 @@ export default function Home() {
 
       {/* HealthierTogether BBC Section */}
       <div className="home-healtier-bbc">
-        <h1 className="home-text276">#HealthierTogether​</h1>
+        <h1 className="home-text276">#HealthierTogether</h1>
         <p className="home-text277">
           <span>
             Prism is proud to be featured in the #HealthierTogether series, produced by the
@@ -537,7 +537,7 @@ export default function Home() {
         <button type="button" className="home-button6 button">
           Watch Now
         </button>
-        <span className="home-text284">As seen on​</span>
+        <span className="home-text284">As seen on</span>
         <div className="home-bbc-photos2">
           <div className="home-container42">
             <img alt="image" src="/14-1024x717-300w.png" className="home-image27" />
@@ -553,8 +553,8 @@ export default function Home() {
 
       {/* Subscribe 3 */}
       <div className="home-subscribe3">
-        <h2 className="home-text285">Limited Time Offer​</h2>
-        <h2 className="home-text286">Subscribe for 30% off your first at-home health test.​</h2>
+        <h2 className="home-text285">Limited Time Offer</h2>
+        <h2 className="home-text286">Subscribe for 30% off your first at-home health test.</h2>
         <p className="home-text287 Content">
           Join our Prism health & wellness newsletter to receive updates, knowledge, and exclusive
           discounts.

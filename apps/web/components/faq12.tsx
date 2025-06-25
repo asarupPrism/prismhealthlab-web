@@ -15,13 +15,13 @@ const FAQ12: React.FC<FAQ12Props> = ({ className = '' }) => {
               <h2 className="faq12-text10">
                 <span>Frequently asked</span>
                 <br />
-                <span>questions​</span>
+                <span>questions</span>
               </h2>
               <p className="faq12-text11 thq-body-large">
                 <span>
                   Have more questions? Our FAQ should answer most of them! If not, don&apos;t
                   hesitate to
-                  <span dangerouslySetInnerHTML={{ __html: ' ' }} />
+                  <span> </span>
                 </span>
                 <span className="faq12-text19">contact us</span>
                 <span> - we&apos;d love to hear from you!</span>
