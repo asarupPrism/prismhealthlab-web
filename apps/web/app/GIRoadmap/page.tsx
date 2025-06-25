@@ -243,7 +243,7 @@ export default function GIRoadmap() {
             <section id="phased-strategy">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-bold">Phased Launch Strategy: From $0 to Full Capability</h2>
-                    <p class="text-lg text-gray-500 mt-2">When can we launch? How do we scale capabilities and what does it cost?</p>
+                    <p class="text-lg text-gray-500 mt-2">What capabilities do we unlock? How do we scale and what does it cost?</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
                     <!-- Phase 0 -->
@@ -344,19 +344,19 @@ export default function GIRoadmap() {
                 </div>
                 
                 <!-- Summary Row -->
-                <div class="mt-8 bg-gradient-to-r from-[#004AAD] to-[#0094D1] rounded-lg p-6 text-white">
+                <div class="mt-8 rounded-lg p-6 shadow-lg" style="background: linear-gradient(135deg, #004AAD 0%, #0094D1 100%);">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                         <div>
-                            <div class="text-2xl font-bold">$290K</div>
-                            <p class="text-sm opacity-90">Total CapEx Investment</p>
+                            <div class="text-2xl font-bold text-white">$290K</div>
+                            <p class="text-sm text-white opacity-90">Total CapEx Investment</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-bold">4 Phases</div>
-                            <p class="text-sm opacity-90">Phased Deployment Strategy</p>
+                            <div class="text-2xl font-bold text-white">4 Phases</div>
+                            <p class="text-sm text-white opacity-90">Phased Deployment Strategy</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-bold">Full Panel</div>
-                            <p class="text-sm opacity-90">Complete Capability Unlocked</p>
+                            <div class="text-2xl font-bold text-white">Full Panel</div>
+                            <p class="text-sm text-white opacity-90">Complete Capability Unlocked</p>
                         </div>
                     </div>
                 </div>
