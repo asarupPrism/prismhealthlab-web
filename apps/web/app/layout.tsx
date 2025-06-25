@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Roboto, Noto_Sans, Poppins, Inter } from 'next/font/google';
 import './globals.css';
 import './teleporthq.css';
-import './home.css';
 
 const roboto = Roboto({
   variable: '--font-roboto',
